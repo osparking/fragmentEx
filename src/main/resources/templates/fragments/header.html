@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Header Fragment</title>
+<link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+	<header th:fragment="header">
+		<div class="logo">
+			<img width="150" alt="Logo" 
+				th:src="@{image/logo.jpg}" >
+		</div>
+		<nav>
+			<ul>
+				<li><a href="/">홈</a></li>
+				<li><a href="/about">소개</a></li>
+				<li><a href="/contact">연락처</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
