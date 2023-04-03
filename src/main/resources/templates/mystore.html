@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+<!-- <head>
+<meta charset="UTF-8">
 <title>우리 식료품점</title>
-</head>
-<body>
-	<div th:replace="~{fragments/header :: header}"></div>
-	<main>
-		<h1>가게 방문을 환영합니다.</h1>
-		<p>Lorem ipsum dolor amet, consectetur elit.</p>
-	</main>
+</head> -->
+<body th:replace="~{fragments/header :: header}"
+	th:with="h1Content='GreetinG'">
 </body>
 </html>

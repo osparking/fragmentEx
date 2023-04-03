@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+</head>
+<footer th:fragment="footer">
+	<h6 th:text="${h6Content}">Default Footer</h6>
+	<p th:text="${#temporals.format(localDate, 'MM-yyyy')}"></p>
+	<p>Copy right 2023 @Bumsoap</p>
+</footer>
+</html>
